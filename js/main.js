@@ -1,5 +1,5 @@
 $(function() {
-  $('.mainNav a').click(function() {
+  $('.mainNav .nav a').click(function() {
     $('button[data-toggle="collapse"]').click();
   });
 
