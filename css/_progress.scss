@@ -9,7 +9,7 @@
   &.stuck {
     position: fixed;
     top: 20px;
-  }
+  }  
 
   a {
     color: #555;
@@ -25,6 +25,7 @@
   }
 
   li {
+    @extend .clearfix;
     margin-bottom: 1.5em;
   }
 
@@ -34,18 +35,19 @@
     margin: 1.5em 0.5em;
   }
 
-
   .circle {
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-    color: #555;
     background-color: #eee;
     border-radius: 20px;
+    color: #555;
     display: inline-block;
-    line-height: 1em;
-    width: 35px;
+    float: left;
     height: 35px; 
+    line-height: 1em;
     margin-right: 10px;
+    margin-bottom: 1em;
     text-align: center;
+    width: 35px;
 
     &.active {
       color: #fff;
@@ -58,6 +60,10 @@
     }
   }
 
+  .title {
+    position: relative;
+    top: 8px;
+  }
 
   .progressIcon {
     background-color: green;

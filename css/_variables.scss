@@ -1,3 +1,16 @@
 $orange: #f47921;
 $headingFont: 'Fjalla One', sans-serif;
 $bodyFont: 'Brawler', sans-serif;
+
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}

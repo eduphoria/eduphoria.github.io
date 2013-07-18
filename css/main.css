@@ -1,6 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Brawler|Fjalla+One);
 @import url(bootstrap.css);
 @import url(bootstrap-responsive.css);
+.clearfix, .progressIndicator li {
+  zoom: 1; }
+  .clearfix:before, .progressIndicator li:before, .clearfix:after, .progressIndicator li:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after, .progressIndicator li:after {
+    clear: both; }
+
 * {
   box-sizing: border-box; }
 
@@ -141,21 +151,26 @@ h1, h2, h3, h4, h5, h6, .button {
     margin: 1.5em 0.5em; }
   .progressIndicator .circle {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    color: #555;
     background-color: #eee;
     border-radius: 20px;
+    color: #555;
     display: inline-block;
-    line-height: 1em;
-    width: 35px;
+    float: left;
     height: 35px;
+    line-height: 1em;
     margin-right: 10px;
-    text-align: center; }
+    margin-bottom: 1em;
+    text-align: center;
+    width: 35px; }
     .progressIndicator .circle.active {
       color: #fff;
       background-color: #f47921; }
     .progressIndicator .circle .text {
       display: inline-block;
       padding-top: 10px; }
+  .progressIndicator .title {
+    position: relative;
+    top: 8px; }
   .progressIndicator .progressIcon {
     background-color: green;
     position: absolute;
