@@ -1,0 +1,191 @@
+@import url(http://fonts.googleapis.com/css?family=Brawler|Fjalla+One);
+@import url(bootstrap.css);
+@import url(bootstrap-responsive.css);
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #333;
+  font-family: "Brawler", sans-serif;
+  padding: 40px 0 0 0; }
+
+p, ul {
+  font-size: 1.1em; }
+
+ul {
+  list-style: circle; }
+
+h1, h2, h3, h4, h5, h6, .button {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase; }
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80em;
+  padding: 0 20px; }
+
+.mainNav {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.05em;
+  position: fixed;
+  text-transform: uppercase;
+  text-align: right;
+  z-index: 150; }
+  .mainNav .logo {
+    float: left;
+    padding: 5px 20px 0px 10px; }
+    .mainNav .logo img {
+      height: 32px; }
+    @media (min-width: 980px) {
+      .mainNav .logo {
+        padding-top: 10px; } }
+  .mainNav .nav {
+    margin-top: 0.5em; }
+    .mainNav .nav > li > a:hover {
+      color: #f47921; }
+    .mainNav .nav > .active > a, .mainNav .nav > .active > a:hover {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+  .mainNav .nav-collapse .nav > li > a, .mainNav .nav-collapse .dropdown-menu a {
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px; }
+  .mainNav .navbar-inner {
+    background: #fff; }
+  .mainNav .pull-right {
+    text-align: left; }
+
+.banner {
+  background-color: #f47921;
+  background-image: url("../img/orange_diamond.png");
+  color: #f3f3f3;
+  font-family: "Fjalla One", sans-serif;
+  padding: 0.5em 0;
+  width: 100%;
+  z-index: 25; }
+  .banner h2, .banner h3, .banner h4 {
+    color: #fff; }
+  .banner p, .banner ul {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 1em; }
+  .banner ul {
+    list-style: circle; }
+    .banner ul a {
+      color: #f3f3f3; }
+  .banner .btn {
+    display: block;
+    margin: 1.5em auto 1em auto;
+    text-transform: uppercase;
+    width: 70%; }
+  .banner .image {
+    padding-top: 1em;
+    text-align: center; }
+  .banner .details {
+    padding-top: 1em; }
+
+.contents {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background: #fff;
+  padding-bottom: 10em;
+  position: relative;
+  width: 100%;
+  z-index: 100; }
+  .contents p {
+    font-size: 1.35em;
+    line-height: 1.7em;
+    margin-bottom: 1.2em; }
+  .contents h2 {
+    border-top: 2px solid #f47921;
+    margin-top: 2.5em;
+    padding-top: 2.0em; }
+    .contents h2:first-child {
+      border-top: none;
+      margin-top: 0; }
+  .contents h3 {
+    border-top: 1px solid #DDD;
+    color: #777;
+    margin-top: 1.5em;
+    padding-top: 0.5em; }
+  .contents h4 {
+    color: #999;
+    margin-top: 1.5em; }
+  .contents li {
+    margin-top: 0.3em; }
+
+.progressIndicator {
+  border: none;
+  display: none;
+  font-family: "Fjalla One", sans-serif;
+  margin-top: 4em;
+  position: relative;
+  z-index: 0; }
+  .progressIndicator.stuck {
+    position: fixed;
+    top: 20px; }
+  .progressIndicator a {
+    color: #555;
+    font-size: 1.1em;
+    text-transform: uppercase; }
+  .progressIndicator h3 {
+    border: none;
+    color: #555;
+    margin: 0;
+    padding: 0.2em 0; }
+  .progressIndicator li {
+    margin-bottom: 1.5em; }
+  .progressIndicator ul {
+    list-style: none;
+    margin: 1.5em 0.5em; }
+  .progressIndicator .circle {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    color: #555;
+    background-color: #eee;
+    border-radius: 20px;
+    display: inline-block;
+    line-height: 1em;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    text-align: center; }
+    .progressIndicator .circle.active {
+      color: #fff;
+      background-color: #f47921; }
+    .progressIndicator .circle .text {
+      display: inline-block;
+      padding-top: 10px; }
+  .progressIndicator .progressIcon {
+    background-color: green;
+    position: absolute;
+    z-index: 200; }
+  @media (min-width: 768px) {
+    .progressIndicator {
+      display: block; } }
+
+.footer {
+  background-color: #ddd;
+  padding: 1em 0;
+  position: relative;
+  text-align: center;
+  z-index: 25; }
+  .footer a {
+    color: #555;
+    font-family: "Fjalla One", sans-serif;
+    padding: 0.5em; }
+  .footer a:hover {
+    color: #f47921; }
+  .footer h3, .footer ul {
+    margin: 0; }
+  .footer .madeInTexas img {
+    margin-right: 0.5em; }
+  @media (min-width: 768px) {
+    .footer {
+      text-align: left; }
+      .footer li {
+        display: inline-block; }
+      .footer a {
+        margin-top: 0.25em; }
+      .footer .madeInTexas {
+        text-align: right; } }

@@ -1,0 +1,41 @@
+.contents {
+  box-shadow: 0 0 1em rgba(0,0,0,0.5);
+  background: #fff;
+  padding-bottom: 10em;
+  position: relative;  
+  width: 100%;
+  z-index: 100;
+
+  p {
+  	font-size: 1.35em;
+  	line-height: 1.7em;
+  	margin-bottom: 1.2em;
+  }
+
+  h2 {
+    border-top: 2px solid $orange;
+    margin-top: 2.5em;
+    padding-top: 2.0em;
+
+    &:first-child {
+      border-top: none;    
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    border-top: 1px solid #DDD;    
+    color: #777;
+    margin-top: 1.5em;
+    padding-top: 0.5em;
+  }
+
+  h4 {
+    color: #999;
+    margin-top: 1.5em;
+  }
+
+  li {
+    margin-top: 0.3em;
+  }
+}

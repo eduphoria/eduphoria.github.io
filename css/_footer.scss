@@ -1,0 +1,43 @@
+.footer {
+	background-color: #ddd;
+	padding: 1em 0;
+  position: relative;
+  text-align: center;
+  z-index: 25;
+
+  a {  
+    color: #555;
+    font-family: $headingFont;
+    padding: 0.5em;    
+  }
+
+  a:hover {
+    color: $orange;
+  }
+
+  h3, ul {
+    margin: 0;
+  }
+
+  .madeInTexas {
+    img {
+      margin-right: 0.5em;
+    }
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      margin-top: 0.25em;
+    }
+
+    .madeInTexas {
+      text-align: right;
+    }
+  }
+}

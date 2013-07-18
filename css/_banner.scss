@@ -1,0 +1,42 @@
+.banner {
+	background-color: $orange;
+  background-image: url('../img/orange_diamond.png');
+	color: #f3f3f3;
+  font-family: $headingFont;
+  padding: 0.5em 0;
+  width: 100%;
+  z-index: 25;
+
+  h2, h3, h4 {
+    color: #fff;    
+  }
+
+  p, ul {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+  }
+
+  ul {
+    list-style: circle;
+    a {
+      color: #f3f3f3;
+    }
+  }
+
+  .btn {
+    display: block;
+    margin: 1.5em auto 1em auto;
+    text-transform: uppercase;
+    width: 70%;
+  }
+
+  .image {
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  .details {
+    padding-top: 1em;
+  }
+}

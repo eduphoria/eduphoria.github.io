@@ -1,0 +1,49 @@
+.mainNav {
+  font-family: $headingFont;
+  font-size: 1.05em;
+  position: fixed;
+  text-transform: uppercase;
+  text-align: right;
+  z-index: 150;
+
+  .logo {
+    float: left;
+    padding: 5px 20px 0px 10px;
+
+    img {
+      height: 32px;
+    }
+
+    @media (min-width: 980px) {
+      padding-top: 10px;
+    }
+  }
+
+  .nav {
+    margin-top: 0.5em;
+
+    > li > a:hover {
+      color: $orange;
+    }    
+
+    > .active > a, > .active > a:hover {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }    
+  }
+
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+
+  .navbar-inner {
+    background: #fff;
+  }  
+
+  .pull-right {
+    text-align: left;
+  }  
+}

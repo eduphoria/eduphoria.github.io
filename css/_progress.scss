@@ -1,0 +1,71 @@
+.progressIndicator {
+  border: none;
+  display: none;
+  font-family: $headingFont;
+  margin-top: 4em;
+  position: relative;
+  z-index: 0;
+
+  &.stuck {
+    position: fixed;
+    top: 20px;
+  }
+
+  a {
+    color: #555;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    border: none;
+    color: #555;
+    margin: 0;
+    padding: 0.2em 0;
+  }
+
+  li {
+    margin-bottom: 1.5em;
+  }
+
+
+  ul {
+    list-style: none;
+    margin: 1.5em 0.5em;
+  }
+
+
+  .circle {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    color: #555;
+    background-color: #eee;
+    border-radius: 20px;
+    display: inline-block;
+    line-height: 1em;
+    width: 35px;
+    height: 35px; 
+    margin-right: 10px;
+    text-align: center;
+
+    &.active {
+      color: #fff;
+      background-color: $orange;
+    }
+
+    .text {
+      display: inline-block;
+      padding-top: 10px;
+    }
+  }
+
+
+  .progressIcon {
+    background-color: green;
+    position: absolute;
+    z-index: 200;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
