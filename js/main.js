@@ -25,5 +25,5 @@ $(function() {
     }
   });
 
-  $(window).stellar();
+  $(window).stellar(); 
 });
